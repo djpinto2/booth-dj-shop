@@ -109,3 +109,10 @@ body {
   .rise { animation: none; opacity: 1; }
   html { scroll-behavior: auto; }
 }
+
+/* iOS muestra un botón de play encima cuando bloquea el autoplay (modo ahorro de batería) */
+.bg-video::-webkit-media-controls,
+.bg-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}

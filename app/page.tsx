@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ShopGrid } from "@/components/ShopGrid";
 import { Reveal } from "@/components/Reveal";
+import { HeroVideo } from "@/components/HeroVideo";
 import { AddBundle, AddToCart } from "@/components/AddButtons";
 import { bundle, formatPrice, getProduct } from "@/lib/products";
 
@@ -17,17 +18,7 @@ export default function Home() {
     <main>
       {/* HERO */}
       <section className="grain relative flex h-[100svh] min-h-[640px] items-end overflow-hidden">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          src="/media/hero.mp4"
-          poster="/media/hero-poster.jpg"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden
-        />
+        <HeroVideo />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-[var(--bg)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,.6))]" />
 
