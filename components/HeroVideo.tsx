@@ -43,7 +43,7 @@ export function HeroVideo() {
     <video
       ref={ref}
       className="bg-video absolute inset-0 h-full w-full object-cover"
-      src="/media/hero.mp4"
+      src="/media/hero-720.mp4"
       poster="/media/hero-poster.jpg"
       autoPlay
       muted
